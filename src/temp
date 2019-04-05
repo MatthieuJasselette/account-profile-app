@@ -1,0 +1,29 @@
+import React from 'react'
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import NavigationBar from './NavigationBar'
+import AccountProfile from './AccountProfile'
+
+const account = {
+  username: 'Crunchy Crunch',
+  dateJoined: '9/1/18',
+  membershipLevel: 'Silver'
+}
+
+const App = () => (
+  <HashRouter>
+    <React.Fragment>
+      <NavigationBar username={account.username} />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+      </div>
+      <Switch>
+        <Route exact path="/" render={() => <div>Home</div>}/>
+        <Route exact path="/account/profile" render={() => <AccountProfile account={account} />}/>
+      </Switch>
+    </React.Fragment>
+  </HashRouter>
+)
+
+export default App
