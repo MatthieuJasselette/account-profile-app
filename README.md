@@ -1,5 +1,5 @@
 This project is me trying to figure out how to use react context-api to implement it in a groupe project.
-The tuto comes from [https://medium.com/flatiron-labs/how-to-use-the-react-context-api-70a76d3974d5](a medium article)
+The tuto comes from [a medium article](https://medium.com/flatiron-labs/how-to-use-the-react-context-api-70a76d3974d5)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
